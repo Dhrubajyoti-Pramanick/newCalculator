@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+h1 {
+    text-align: center;
+}
+.calculator-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1rem 0;
+    background-image: url("../pics/download.jpeg");
+    background-size: contain; */
+}
+
+.btn-row1, .btn-row2, .btn-row3,
+.btn-row4, .btn-row5, .btn-row6 {
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 2rem;
+}
+.screen input{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 2rem;
+}
+
+#exp {
+    font-size: 1rem;
+}
+
+.btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-size: 2rem;
+    box-shadow: 4px 2px 17px 0px rgba(0,0,0,0.40);
+}
+
+.btn:a {
+    box-shadow: none;
+}
+ #log {
+    font-size: 1rem;
+ }
+.num {
+    background-color: rgb(206, 220, 239);
+}
+
+.op {
+    background-color: rgb(176, 202, 242);
+}
+
+.eq {
+    background-color: rgb(234, 120, 79);
+}

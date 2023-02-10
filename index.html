@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>New Calculator</h1><br>
+    <section class="calculator-container">
+        <div class="screen">
+            <input type="text" placeholder="0" id="exp">
+            <input type="text" placeholder="0" id="disp">
+        </div>
+        <div class="buttons">
+            <ul class="btn-row1">
+                <button class="btn op" onclick="clr()">AC</button>
+                <button class="btn op" onclick="inv()">+/-</button>
+                <button class="btn op" onclick="calc('%')">%</button>
+                <button class="btn op" onclick="calc('/')">/</button>
+            </ul>
+            <ul class="btn-row2">
+                <button class="btn num" onclick="calcSp('log')" id="log">log<sub>10</sub>()</button>
+                <button class="btn num" onclick="calcSp('2')">x<sup>2</sup></button>
+                <button class="btn num" onclick="calcSp('3')">x<sup>3</button>
+                <button class="btn op" onclick="calcSp('sqrt')">sqrt</button>
+            </ul>
+            <ul class="btn-row3">
+                <button class="btn num" onclick="disp(7)">7</button>
+                <button class="btn num" onclick="disp(8)">8</button>
+                <button class="btn num" onclick="disp(9)">9</button>
+                <button class="btn op" onclick="calc('*')">X</button>
+            </ul>
+            <ul class="btn-row4">
+                <button class="btn num" onclick="disp(4)">4</button>
+                <button class="btn num" onclick="disp(5)">5</button>
+                <button class="btn num" onclick="disp(6)">6</button>
+                <button class="btn op" onclick="calc('-')">-</button>
+            </ul>
+            <ul class="btn-row5">
+                <button class="btn num" onclick="disp(1)">1</button>
+                <button class="btn num" onclick="disp(2)">2</button>
+                <button class="btn num" onclick="disp(3)">3</button>
+                <button class="btn op" onclick="calc('+')">+</button>
+            </ul>
+            <ul class="btn-row6">
+                <button class="btn num" onclick="disp(0)">0</button>
+                <button class="btn op" onclick="disp('.')">.</button>
+                <button class="btn op" onclick="calc('^')">^</button>
+                <button class="btn eq" onclick="result()">=</button>
+            </ul>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
